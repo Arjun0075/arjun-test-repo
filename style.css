@@ -1,0 +1,35 @@
+div.span-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+span {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+div p {
+    font-size: 20px;
+    text-align: center;
+}
+
+div .yellow {
+    background-color: yellow;
+}
+div .blue {
+    background-color: blue;
+}
+div .pink {
+    background-color: pink;
+}
+div .purple {
+    background-color: purple;
+}
+
+div .grey {
+    background-color: grey;
+}

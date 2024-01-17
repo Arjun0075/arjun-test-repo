@@ -1,0 +1,15 @@
+{
+  "name": "arjun-test-repo",
+  "version": "1.0.0",
+  "description": "Demo Arjun-test-repo\r This is new repo",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
