@@ -22,46 +22,55 @@
 // })
 
 
-let form = document.querySelector("form")
+// let form = document.querySelector("form")
 
-form.addEventListener("submit", (e)=>{
-    // debugger
-    e.preventDefault()
+// form.addEventListener("submit", (e)=>{
+//     // debugger
+//     e.preventDefault()
     
-    // console.log(e.target)
+//     // console.log(e.target)
 
-    let height = parseFloat(document.querySelector(".height").value)
-    let weight = parseFloat(document.querySelector(".weight").value) 
-    // console.log(height.value)
+//     let height = parseFloat(document.querySelector(".height").value)
+//     let weight = parseFloat(document.querySelector(".weight").value) 
+//     // console.log(height.value)
 
-    let BMI = (weight / (height* height)).toFixed(2)
-    if(!isNaN(BMI)){
-        let result = document.querySelector(".result")
-        console.log(result)
-        result.style.visibility = "visible"
-        result.innerHTML = `Your BMI is ${BMI}`
+//     let BMI = (weight / (height* height)).toFixed(2)
+//     if(!isNaN(BMI)){
+//         let result = document.querySelector(".result")
+//         console.log(result)
+//         result.style.visibility = "visible"
+//         result.innerHTML = `Your BMI is ${BMI}`
     
-        let clearButton = document.querySelector(".clear-button")
-        clearButton.style.visibility = "visible"    
-    }else{
-        alert("Please enter correct Values")
-    }
+//         let clearButton = document.querySelector(".clear-button")
+//         clearButton.style.visibility = "visible"    
+//     }else{
+//         alert("Please enter correct Values")
+//     }
 
    
-    console.log(BMI)
-})
+//     console.log(BMI)
+// })
 
-function handleClear () {
-    let result = document.querySelector(".result")
-    result.style.visibility = "hidden"
+// function handleClear () {
+//     let result = document.querySelector(".result")
+//     result.style.visibility = "hidden"
 
-    let clearButton = document.querySelector(".clear-button")
-    clearButton.style.visibility = "hidden"
+//     let clearButton = document.querySelector(".clear-button")
+//     clearButton.style.visibility = "hidden"
 
-    let height = document.querySelector(".height")
-    let weight = document.querySelector(".weight")
+//     let height = document.querySelector(".height")
+//     let weight = document.querySelector(".weight")
 
-    height.value = ""
-    weight.value = ""
-}
-   
+//     height.value = ""
+//     weight.value = ""
+// }
+
+
+// Local clock 
+let clock = document.querySelector(".clockdigits")
+
+
+setInterval(()=> {
+    let date = new Date().toLocaleTimeString()
+    clock.innerHTML = date
+}, 1000)
