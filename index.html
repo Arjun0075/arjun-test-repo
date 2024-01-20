@@ -8,12 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-div">
+    <!-- <div class="main-div">
         <h1>Your Local Time</h1>
         <div class="clockdisplay">
             <span class="clockdigits"></span>
         </div>
-    </div>
-   
+    </div> -->
+   <div class="main-div">
+    <h1>Guess The Number Between 1 and 100</h1>
+    
+    <input type="number" class="input">
+
+    <button class="submit-button" onclick="handleSubmit()">Submit Guess</button>
+
+    <p >Previous Guess : <span class="previous-guess" ></span></p>
+    <p>Remianing Guesses : <span class= "remaining-guess">10</span> </p>
+    <p class="loworhigh"></p>
+   </div>
 </body>
 </html>
